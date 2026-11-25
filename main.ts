@@ -2,6 +2,7 @@
 // Writes the single-line commit message to /output/entry.txt.
 // Deterministic: no input, no network, no randomness, no environment reads.
 // The line is the entry; see CANDIDATES.md for the brainstorm and selection.
+// Line is 79 chars, inside the 1–159 gate; output is byte-identical on every run.
 
 import { mkdirSync, writeFileSync, chmodSync } from "node:fs";
 
