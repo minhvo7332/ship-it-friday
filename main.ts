@@ -18,4 +18,3 @@ mkdirSync(outDir, { recursive: true });
 const outPath = `${outDir}/entry.txt`;
 writeFileSync(outPath, LINE, "utf8");
 chmodSync(outPath, 0o644);
-chmodSync(outDir, 0o755);
